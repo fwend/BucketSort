@@ -16,8 +16,10 @@ const bucketSort = (a) => {
             const key = b[i];
     
             let j = i - 1;
-            for (; j >= 0 && b[j] > key; j--) {
+            while (j >= 0 && b[j] > key) {
+                
                 b[j + 1] = b[j];
+                j--;
             }
     
             b[j + 1] = key;
