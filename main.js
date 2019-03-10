@@ -11,6 +11,7 @@ const bucketSort = (a) => {
   
     buckets.forEach((b) => {
       
+        // do an insertion sort on the bucket
         for (let i = 1; i < b.length; i++) {
 
             const key = b[i];
